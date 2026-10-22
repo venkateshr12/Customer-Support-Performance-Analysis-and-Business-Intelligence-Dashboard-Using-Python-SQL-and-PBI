@@ -1,8 +1,6 @@
-# Customer-Support-Performance-Analysis-and-Business-Intelligence-Dashboard-Using-Python-SQL-and-PBI
-Customer Support Performance Analysis and Interactive BI Dashboard using Python, SQL, and Power BI. Analyze ticket trends, response and resolution times, customer satisfaction, and escalation rates to generate actionable business insights.
 # Customer Support Performance Analysis and Business Intelligence Dashboard
 
-An end-to-end data analytics project using Python, SQL, and Microsoft Power BI to analyze customer support tickets and generate actionable business insights.
+An end-to-end data analytics project using Python, SQL, and Microsoft Power BI to analyze customer support tickets and generate actionable business insights.https://github.com/venkateshr12/Customer-Support-Performance-Analysis-and-Business-Intelligence-Dashboard-Using-Python-SQL-and-PBI/edit/main/README.md
 
 ## 📌 Project Overview
 
