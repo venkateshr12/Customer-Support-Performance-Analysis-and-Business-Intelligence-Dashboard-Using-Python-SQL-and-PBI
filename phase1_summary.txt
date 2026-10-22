@@ -1,0 +1,48 @@
+CUSTOMER SUPPORT DATASET - PHASE 1 SUMMARY
+
+Dataset shape before cleaning: 20000 rows x 15 columns
+Duplicate rows before cleaning: 0
+Rows after basic cleaning: 20000
+Columns after cleaning: 16
+
+Missing values before cleaning:
+TicketID                   0
+CustomerID              1978
+IssueType                  0
+Priority                   0
+Channel                    0
+CreatedDate                0
+ResolvedDate           12837
+ResolutionTimeHours    12851
+AgentID                    0
+AgentExperience            0
+Status                     0
+EscalationFlag             0
+SatisfactionScore       4726
+ResponseTimeMinutes        0
+Region                  1950
+
+Cleaning performed:
+1. Converted CreatedDate and ResolvedDate to datetime.
+2. Removed exact duplicate records.
+3. Filled missing CustomerID with "Unknown".
+4. Filled missing Region with "Unknown".
+5. Calculated missing ResolutionTimeHours when both CreatedDate and ResolvedDate were available.
+6. Kept ResolutionTimeHours blank for unresolved tickets because they have not been resolved.
+7. Kept missing SatisfactionScore as unrated rather than inventing a numerical score.
+8. Added SatisfactionAvailable to distinguish rated vs unrated records.
+
+Charts included in dashboard:
+1. Tickets by Issue Type
+2. Tickets by Priority
+3. Tickets by Channel
+4. Tickets by Status
+5. Top 10 Regions by Ticket Count
+6. Average Response Time by Channel
+7. Average Resolution Time by Priority
+8. Average Satisfaction by Channel
+9. Escalation Rate by Priority
+
+Note: The Phase 1 document requires 8-10 charts, dashboard-style presentation, basic Python cleaning,
+and basic SQL operations including SELECT, WHERE, ORDER BY, GROUP BY, HAVING, DISTINCT, COUNT,
+SUM, AVG, MIN, and MAX.
